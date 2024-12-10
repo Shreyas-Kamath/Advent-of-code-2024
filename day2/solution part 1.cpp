@@ -3,7 +3,6 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <algorithm>
 
 bool is_increasing_or_decreasing(const std::vector<int>& levels){
     bool increasing = true; bool decreasing = true;
@@ -26,7 +25,6 @@ bool atleast_one_atmost_three(const std::vector<int>& levels){
 
 int main() {
     std::vector<std::vector<int>> reports;      //vector of vector of ints
-
     std::ifstream file("data.txt");
     std::string line, num;
 
