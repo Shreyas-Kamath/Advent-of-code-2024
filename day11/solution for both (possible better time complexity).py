@@ -5,11 +5,11 @@ with open ("data.txt", 'r') as file:
 
 stones = defaultdict(int, Counter(data))
 
-iterations = 25
+iterations = 75
 
 def one_blink():
     for stone, count in list(stones.items()):    #list because the dictionary is modified during the loop
-        if count == 0: continue
+        if count == 0: continue                  #runtime is 80-90 ms
         if stone == 0:
             stones[1] += count
             stones[0] -= count
