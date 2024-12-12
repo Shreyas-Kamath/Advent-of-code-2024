@@ -15,9 +15,10 @@ def update(stones: list[int]) -> list[int]:
             updated_stones.append(int(rhs))
         else:
             updated_stones.append(stone * 2024)
+    print(updated_stones)
     return updated_stones
 
-for i in range(25):
+for i in range(5):
     stones = update(stones)
 
 print(len(stones))
