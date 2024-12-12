@@ -1,4 +1,4 @@
-
+# brute force is really bad, you need to download more RAM to run 75 iterations
 
 stones=[]
 with open("data.txt", 'r') as file:
@@ -15,10 +15,9 @@ def update(stones: list[int]) -> list[int]:
             updated_stones.append(int(rhs))
         else:
             updated_stones.append(stone * 2024)
-    print(updated_stones)
     return updated_stones
 
-for i in range(5):
+for i in range(25):
     stones = update(stones)
 
 print(len(stones))
